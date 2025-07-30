@@ -1,0 +1,17 @@
+com.insuraflow.quoteservice
+├── controller
+│   └── QuoteController.java
+├── service
+│   ├── QuoteService.java
+│   └── impl/QuoteServiceImpl.java
+├── dto
+│   └── QuoteRequestDto.java
+├── model
+│   └── Quote.java
+├── repository
+│   └── QuoteRepository.java
+├── mapper
+│   └── QuoteMapper.java (MapStruct)
+├── config
+│   └── SecurityConfig.java
+└── InsuraflowQuoteServiceApplication.java
