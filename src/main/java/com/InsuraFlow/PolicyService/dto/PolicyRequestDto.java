@@ -5,9 +5,20 @@ import java.time.LocalDate;
 
 public class PolicyRequestDto {
     private Long quoteId;
+    private String policyNumber;
     private LocalDate startDate;
     private LocalDate endDate;
     private BigDecimal totalPremium;
+
+    public PolicyRequestDto() {
+    }
+    public String getPolicyNumber() {
+        return policyNumber;
+    }
+
+    public void setPolicyNumber(String policyNumber) {
+        this.policyNumber = policyNumber;
+    }
 
     public Long getQuoteId() {
         return quoteId;

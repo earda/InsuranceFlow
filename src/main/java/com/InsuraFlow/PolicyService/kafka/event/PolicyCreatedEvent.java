@@ -3,14 +3,14 @@ package com.InsuraFlow.PolicyService.kafka.event;
 import lombok.Data;
 
 @Data
-public class QuoteCreatedEvent {
+public class PolicyCreatedEvent {
     private Long quoteId;
     private String fullName;
     private String identityNumber;
 
-    public QuoteCreatedEvent() {
+    public PolicyCreatedEvent() {
     }
-    public QuoteCreatedEvent(Long quoteId, String fullName, String identityNumber) {
+    public PolicyCreatedEvent(Long quoteId, String fullName, String identityNumber) {
         this.quoteId = quoteId;
         this.fullName = fullName;
         this.identityNumber = identityNumber;
