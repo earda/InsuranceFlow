@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
 @RequestMapping("/api/quotes")
+@RestController
 public class QuoteController {
 
     private final QuoteService quoteService;
@@ -32,6 +32,7 @@ public class QuoteController {
 
     @GetMapping
     public ResponseEntity<List<Quote>> getAllQuotes() {
+        System.out.println("Controller'a istek geldi!");
         List<Quote> quotes = quoteService.getAllQuotes();
         return ResponseEntity.ok(quotes);
     }

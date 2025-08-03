@@ -1,0 +1,10 @@
+com\InsuraFlow\InsuraFlow\dto\QuoteRequestDto.class
+com\InsuraFlow\InsuraFlow\model\Quote.class
+com\InsuraFlow\InsuraFlow\service\impl\QuoteServiceImpl.class
+com\InsuraFlow\InsuraFlow\repository\QuoteRepository.class
+com\InsuraFlow\InsuraFlow\service\QuoteService.class
+com\InsuraFlow\InsuraFlow\mapper\QuoteMapper.class
+com\InsuraFlow\InsuraFlow\config\SecurityConfig.class
+com\InsuraFlow\InsuraFlow\controller\QuoteController.class
+com\InsuraFlow\InsuraFlow\mapper\QuoteMapperImpl.class
+com\InsuraFlow\InsuraFlow\InsuranceApplication.class

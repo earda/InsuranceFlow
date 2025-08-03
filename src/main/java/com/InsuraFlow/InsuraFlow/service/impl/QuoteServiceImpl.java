@@ -6,6 +6,7 @@ import com.InsuraFlow.InsuraFlow.model.Quote;
 import com.InsuraFlow.InsuraFlow.repository.QuoteRepository;
 import com.InsuraFlow.InsuraFlow.service.QuoteService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -19,10 +20,21 @@ public class QuoteServiceImpl implements QuoteService {
         this.quoteRepository = quoteRepository;
         this.quoteMapper = quoteMapper;
     }
+
+
     @Override
+    @Transactional
     public Quote createQuote(QuoteRequestDto quoteRequestDto) {
-        Quote quote = quoteMapper.toEntity(quoteRequestDto);
-        return quoteRepository.save(quote);
+        Quote quote = new Quote();
+            quote.setFullName(quoteRequestDto.getFullName());
+            quote.setIdentityNumber(quoteRequestDto.getIdentityNumber());
+            quote.setBirthDate(quoteRequestDto.getBirthDate());
+            quote.setGender(quoteRequestDto.getGender());
+            quote.setPhoneNumber(quoteRequestDto.getPhoneNumber());
+            quote.setEmail(quoteRequestDto.getEmail());
+            quoteRepository.save(quote);
+            throw new RuntimeException("Testing rollback");
+
     }
 
     @Override
