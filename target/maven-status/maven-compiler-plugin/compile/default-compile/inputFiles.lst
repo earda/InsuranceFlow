@@ -1,6 +1,8 @@
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\PolicyService\controller\PolicyController.java
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\PolicyService\dto\PolicyRequestDto.java
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\PolicyService\dto\PolicyResponseDto.java
+C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\PolicyService\kafka\consumer\QuoteKafkaConsumer.java
+C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\PolicyService\kafka\event\event.java
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\PolicyService\mapper\PolicyMapper.java
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\PolicyService\model\Policy.java
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\PolicyService\repository\PolicyRepository.java
@@ -10,6 +12,8 @@ C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\QuatoService\conf
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\QuatoService\controller\QuoteController.java
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\QuatoService\dto\QuoteRequestDto.java
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\QuatoService\InsuranceApplication.java
+C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\QuatoService\kafka\event\QuoteCreatedEvent.java
+C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\QuatoService\kafka\producer\QuoteKafkaProducer.java
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\QuatoService\mapper\QuoteMapper.java
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\QuatoService\model\Quote.java
 C:\Users\earda\Desktop\InsuraFlow\src\main\java\com\InsuraFlow\QuatoService\repository\QuoteRepository.java

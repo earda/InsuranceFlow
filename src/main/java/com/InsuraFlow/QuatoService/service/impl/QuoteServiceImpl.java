@@ -1,6 +1,8 @@
 package com.InsuraFlow.QuatoService.service.impl;
 
 import com.InsuraFlow.QuatoService.dto.QuoteRequestDto;
+import com.InsuraFlow.QuatoService.kafka.event.QuoteCreatedEvent;
+import com.InsuraFlow.QuatoService.kafka.producer.QuoteKafkaProducer;
 import com.InsuraFlow.QuatoService.mapper.QuoteMapper;
 import com.InsuraFlow.QuatoService.model.Quote;
 import com.InsuraFlow.QuatoService.repository.QuoteRepository;
@@ -16,9 +18,11 @@ public class QuoteServiceImpl implements QuoteService {
     private final QuoteRepository quoteRepository;
     private final QuoteMapper quoteMapper;
 
-    public QuoteServiceImpl(QuoteRepository quoteRepository, QuoteMapper quoteMapper) {
+    private final QuoteKafkaProducer quoteKafkaProducer;
+    public QuoteServiceImpl(QuoteRepository quoteRepository, QuoteMapper quoteMapper, QuoteKafkaProducer quoteKafkaProducer) {
         this.quoteRepository = quoteRepository;
         this.quoteMapper = quoteMapper;
+        this.quoteKafkaProducer = quoteKafkaProducer;
     }
 
 
@@ -32,8 +36,17 @@ public class QuoteServiceImpl implements QuoteService {
             quote.setGender(quoteRequestDto.getGender());
             quote.setPhoneNumber(quoteRequestDto.getPhoneNumber());
             quote.setEmail(quoteRequestDto.getEmail());
-            quoteRepository.save(quote);
-            throw new RuntimeException("Testing rollback");
+        Quote savedQuote = quoteRepository.save(quote);
+
+        // Kafka mesajı gönderiliyor
+        QuoteCreatedEvent event = new QuoteCreatedEvent(
+                savedQuote.getId(),
+                savedQuote.getFullName(),
+                savedQuote.getIdentityNumber()
+        );
+        quoteKafkaProducer.sendQuoteCreatedEvent(event);
+
+        return quoteRepository.save(quote);
 
     }
 
@@ -52,4 +65,6 @@ public class QuoteServiceImpl implements QuoteService {
     public void deleteQuote(Long id) {
         quoteRepository.deleteById(id);
     }
+
+
 }
