@@ -1,3 +1,3 @@
-com\InsuraFlow\InsuraFlow\InsuranceApplicationTests.class
-com\InsuraFlow\InsuraFlow\TestcontainersConfiguration.class
-com\InsuraFlow\InsuraFlow\TestInsuranceApplication.class
+com\InsuraFlow\QuatoService\InsuranceApplicationTests.class
+com\InsuraFlow\QuatoService\TestcontainersConfiguration.class
+com\InsuraFlow\QuatoService\TestInsuranceApplication.class
