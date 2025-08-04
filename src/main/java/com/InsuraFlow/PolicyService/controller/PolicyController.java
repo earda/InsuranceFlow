@@ -4,9 +4,6 @@ import com.InsuraFlow.PolicyService.dto.PolicyRequestDto;
 import com.InsuraFlow.PolicyService.dto.PolicyResponseDto;
 import com.InsuraFlow.PolicyService.model.Policy;
 import com.InsuraFlow.PolicyService.service.PolicyService;
-import com.InsuraFlow.QuatoService.dto.QuoteRequestDto;
-import com.InsuraFlow.QuatoService.model.Quote;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +21,7 @@ public class PolicyController {
 
     @PostMapping
     public ResponseEntity<Policy> createPolicy(@RequestBody PolicyRequestDto dto) {
+        System.out.println("createPolicy'a istek geldi!");
         Policy savedPolicy = policyService.createPolicy(dto);
         return ResponseEntity.ok(savedPolicy);
     }

@@ -10,8 +10,6 @@ public class PolicyRequestDto {
     private LocalDate endDate;
     private BigDecimal totalPremium;
 
-    public PolicyRequestDto() {
-    }
     public String getPolicyNumber() {
         return policyNumber;
     }
