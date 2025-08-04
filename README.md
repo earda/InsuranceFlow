@@ -97,5 +97,11 @@ http://localhost:9000 (Kafdrop arayüzü)
   "email": "erdem@example.com"
 }
 ```
+### 4. Kafdrop ile Topic takibi
+
+![kafka1](https://github.com/user-attachments/assets/bfd455d5-e96b-4ebe-9c15-7c185a95dd30)
+
+
+
 🤝 Katkıda Bulun
 Bu proje geliştirilmeye açıktır. Issue ya da Pull Request gönderebilirsiniz.
