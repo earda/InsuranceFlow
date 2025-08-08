@@ -1,4 +1,4 @@
-package com.InsuraFlow.QuatoService.model;
+package com.InsuraFlow.QuateService.model;
 
 import jakarta.persistence.*;
 

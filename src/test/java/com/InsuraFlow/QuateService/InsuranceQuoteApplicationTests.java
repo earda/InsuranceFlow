@@ -1,4 +1,4 @@
-package com.InsuraFlow.QuatoService;
+package com.InsuraFlow.QuateService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

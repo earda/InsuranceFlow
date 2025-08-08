@@ -1,13 +1,13 @@
-package com.InsuraFlow.QuatoService.mapper;
+package com.InsuraFlow.QuateService.mapper;
 
-import com.InsuraFlow.QuatoService.dto.QuoteRequestDto;
-import com.InsuraFlow.QuatoService.model.Quote;
+import com.InsuraFlow.QuateService.dto.QuoteRequestDto;
+import com.InsuraFlow.QuateService.model.Quote;
 import javax.annotation.processing.Generated;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-08-04T21:01:13+0300",
+    date = "2025-08-05T17:24:03+0300",
     comments = "version: 1.6.3, compiler: Eclipse JDT (IDE) 3.40.0.v20240919-1711, environment: Java 17.0.12 (Eclipse Adoptium)"
 )
 @Component

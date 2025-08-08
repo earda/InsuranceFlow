@@ -1,12 +1,12 @@
-package com.InsuraFlow.QuatoService.service.impl;
+package com.InsuraFlow.QuateService.service.impl;
 
-import com.InsuraFlow.QuatoService.dto.QuoteRequestDto;
-import com.InsuraFlow.QuatoService.kafka.event.QuoteCreatedEvent;
-import com.InsuraFlow.QuatoService.kafka.producer.QuoteKafkaProducer;
-import com.InsuraFlow.QuatoService.mapper.QuoteMapper;
-import com.InsuraFlow.QuatoService.model.Quote;
-import com.InsuraFlow.QuatoService.repository.QuoteRepository;
-import com.InsuraFlow.QuatoService.service.QuoteService;
+import com.InsuraFlow.QuateService.dto.QuoteRequestDto;
+import com.InsuraFlow.QuateService.kafka.event.QuoteCreatedEvent;
+import com.InsuraFlow.QuateService.kafka.producer.QuoteKafkaProducer;
+import com.InsuraFlow.QuateService.mapper.QuoteMapper;
+import com.InsuraFlow.QuateService.model.Quote;
+import com.InsuraFlow.QuateService.repository.QuoteRepository;
+import com.InsuraFlow.QuateService.service.QuoteService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

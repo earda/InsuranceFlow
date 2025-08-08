@@ -1,4 +1,4 @@
-package com.InsuraFlow.QuatoService;
+package com.InsuraFlow.QuateService;
 
 import org.springframework.boot.SpringApplication;
 

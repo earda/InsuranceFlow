@@ -1,4 +1,4 @@
-package com.InsuraFlow.QuatoService.config;
+package com.InsuraFlow.QuateService.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -30,10 +30,10 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
+        http.cors(withDefaults())
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/quotes/**").authenticated()
+                        .requestMatchers("/api/quotes/**").permitAll()
                         .anyRequest().permitAll()
                 )
                 .httpBasic(withDefaults());
@@ -43,6 +43,7 @@ public class SecurityConfig {
 
     @Bean
     public CorsFilter corsFilter() {
+        System.out.println("QuoteService CorsFilter çalıştı");
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
         config.addAllowedOrigin("http://localhost:4200");

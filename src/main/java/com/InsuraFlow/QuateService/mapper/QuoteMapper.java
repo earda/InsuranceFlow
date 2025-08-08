@@ -1,7 +1,7 @@
-package com.InsuraFlow.QuatoService.mapper;
+package com.InsuraFlow.QuateService.mapper;
 
-import com.InsuraFlow.QuatoService.dto.QuoteRequestDto;
-import com.InsuraFlow.QuatoService.model.Quote;
+import com.InsuraFlow.QuateService.dto.QuoteRequestDto;
+import com.InsuraFlow.QuateService.model.Quote;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")

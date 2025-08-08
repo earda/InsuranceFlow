@@ -1,8 +1,8 @@
-package com.InsuraFlow.QuatoService.kafka.producer;
+package com.InsuraFlow.QuateService.kafka.producer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.InsuraFlow.QuatoService.kafka.event.QuoteCreatedEvent;
+import com.InsuraFlow.QuateService.kafka.event.QuoteCreatedEvent;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 

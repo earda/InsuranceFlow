@@ -1,4 +1,4 @@
-package com.InsuraFlow.QuatoService.kafka.event;
+package com.InsuraFlow.QuateService.kafka.event;
 
 
 import lombok.Data;

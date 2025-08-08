@@ -1,6 +1,6 @@
-package com.InsuraFlow.QuatoService.repository;
+package com.InsuraFlow.QuateService.repository;
 
-import com.InsuraFlow.QuatoService.model.Quote;
+import com.InsuraFlow.QuateService.model.Quote;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

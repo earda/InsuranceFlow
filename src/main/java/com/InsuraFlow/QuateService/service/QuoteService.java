@@ -1,7 +1,7 @@
-package com.InsuraFlow.QuatoService.service;
+package com.InsuraFlow.QuateService.service;
 
-import com.InsuraFlow.QuatoService.dto.QuoteRequestDto;
-import com.InsuraFlow.QuatoService.model.Quote;
+import com.InsuraFlow.QuateService.dto.QuoteRequestDto;
+import com.InsuraFlow.QuateService.model.Quote;
 
 import java.util.List;
 

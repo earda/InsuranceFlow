@@ -1,0 +1,46 @@
+<div class="fancy-form-container">
+  <h2>Teklif Oluştur</h2>
+  <form (ngSubmit)="submitQuote()">
+    <div class="form-group">
+      <label>Ad Soyad:</label>
+      <input [(ngModel)]="quote.fullName" name="fullName" required />
+    </div>
+
+    <div class="form-group">
+      <label>TC Kimlik No:</label>
+      <input [(ngModel)]="quote.identityNumber" name="identityNumber" required />
+    </div>
+
+    <div class="form-group">
+      <label>Doğum Tarihi:</label>
+      <input [(ngModel)]="quote.birthDate" name="birthDate" type="date" required />
+    </div>
+
+    <div class="form-group">
+      <label>Cinsiyet:</label>
+      <select [(ngModel)]="quote.gender" name="gender">
+        <option value="MALE">Erkek</option>
+        <option value="FEMALE">Kadın</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Telefon:</label>
+      <input [(ngModel)]="quote.phoneNumber" name="phoneNumber" required />
+    </div>
+
+    <div class="form-group">
+      <label>Email:</label>
+      <input [(ngModel)]="quote.email" name="email" type="email" required />
+    </div>
+
+    <div class="button-group">
+      <button type="submit" class="primary">Oluştur</button>
+      <button type="reset" class="secondary">Temizle</button>
+    </div>
+
+    <div *ngIf="successMessage" class="success-msg">
+      {{ successMessage }}
+    </div>
+  </form>
+</div>

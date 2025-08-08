@@ -1,4 +1,4 @@
-package com.InsuraFlow.QuatoService.dto;
+package com.InsuraFlow.QuateService.dto;
 
 import java.time.LocalDate;
 

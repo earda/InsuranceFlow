@@ -28,7 +28,7 @@ public class PolicyKafkaConsumer {
             PolicyCreatedEvent event = objectMapper.readValue(message, PolicyCreatedEvent.class);
             System.out.println("Yeni teklif alındı (Kafka): " + event);
 
-            // 🔧 Otomatik Policy kaydı
+            //   Otomatik Policy kaydı
             Policy policy = new Policy();
             policy.setQuoteId(event.getQuoteId());
             policy.setPolicyNumber(UUID.randomUUID().toString());
@@ -41,6 +41,7 @@ public class PolicyKafkaConsumer {
             System.out.println("Otomatik policy oluşturuldu: " + policy);
 
         } catch (Exception e) {
+            System.out.println("Poliçe oluşturulamadı");
             e.printStackTrace();
         }
     }

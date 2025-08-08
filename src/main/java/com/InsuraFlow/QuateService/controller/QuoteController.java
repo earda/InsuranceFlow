@@ -1,8 +1,8 @@
-package com.InsuraFlow.QuatoService.controller;
+package com.InsuraFlow.QuateService.controller;
 
-import com.InsuraFlow.QuatoService.dto.QuoteRequestDto;
-import com.InsuraFlow.QuatoService.model.Quote;
-import com.InsuraFlow.QuatoService.service.QuoteService;
+import com.InsuraFlow.QuateService.dto.QuoteRequestDto;
+import com.InsuraFlow.QuateService.model.Quote;
+import com.InsuraFlow.QuateService.service.QuoteService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
