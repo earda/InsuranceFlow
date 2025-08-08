@@ -17,7 +17,7 @@
 ![Lombok](https://img.shields.io/badge/Lombok-Enabled-orange?logo=lombok)
 ![MapStruct](https://img.shields.io/badge/MapStruct-1.5.5.Final-lightgrey)
 ![JPA](https://img.shields.io/badge/JPA-Hibernate-red?logo=hibernate)
-
+![Angular](https://img.shields.io/badge/Angular-DD0031?logo=angular&logoColor=white)
 </div>
 
 ---
