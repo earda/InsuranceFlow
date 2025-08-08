@@ -1,0 +1,21 @@
+<h2>Poliçe Listesi</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Teklif ID</th>
+    <th>Başlangıç</th>
+    <th>Bitiş</th>
+    <th>Prim</th>
+  </tr>
+  <tr *ngFor="let p of policies">
+    <td>{{ p.id }}</td>
+    <td>{{ p.quoteId }}</td>
+    <td>{{ p.startDate }}</td>
+    <td>{{ p.endDate }}</td>
+    <td>{{ p.totalPremium }}</td>
+  </tr>
+</table>
+
+<div class="button-group">
+  <button type="button" (click)="goToCreatePolicy()">Poliçe Oluştur</button>
+</div>
